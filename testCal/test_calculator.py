@@ -67,14 +67,8 @@ def test_mul_negative():
     assert mul_num(2, -3) ==  -6
 
 
-def test_string_expect_exception_firstinputMUL():
-    with pytest.raises(TypeError):
-        mul_num('Random Text' , 4)
 
 
-def test_string_expect_exception_secondinputMUL():
-    with pytest.raises(TypeError):
-        mul_num(4,'Random Text')
     
 
 
