@@ -17,6 +17,8 @@ def mul_num(a,b):
 
 
 def div_num(a,b):
+    if(b == 0):
+        raise ZeroDivisionError("Divisor must not be Zero")
     return a/b;
 
 
@@ -45,6 +47,20 @@ def test_add_zero():
 def test_add_negative():
     assert add_num(2, -3) ==  -1
 
+
+def test_string_expect_exception_firstinput():
+    with pytest.raises(TypeError):
+        add_num('Random Text' , 4)
+        
+        
+def test_string_expect_exception_secondinput():
+    with pytest.raises(TypeError):
+        add_num(4,'Random Text')
+        
+        
+
+        
+        
 
 
 

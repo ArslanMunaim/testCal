@@ -18,5 +18,14 @@ def test_add_negative():
     assert add_num(2, -3) ==  -1
 
 
+def test_string_expect_exception_firstinput():
+    with pytest.raises(TypeError):
+        add_num('Random Text' , 4)
+        
+        
+def test_string_expect_exception_secondinput():
+    with pytest.raises(TypeError):
+        add_num(4,'Random Text')
+
 
 
