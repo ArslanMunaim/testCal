@@ -68,11 +68,11 @@ def test_mul_negative():
 
 
 def test_div_positives():
-    assert mul_num(2,2) == 1
+    assert div_num(2,2) == 1
     
  
 def test_div_negative():
-    assert mul_num(2, -3) ==  -6
+    assert div_num(2, -3) ==  -6
 
 
 def test_div_zero():
