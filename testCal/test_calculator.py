@@ -76,7 +76,7 @@ def test_div_negative():
 
 
 def test_div_zero():
-    with pytest.raises(ZeroDivisionError)
+    with pytest.raises(ZeroDivisionError):
         div_num(314,0)
 
 
