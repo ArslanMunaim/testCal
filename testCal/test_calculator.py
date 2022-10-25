@@ -72,7 +72,7 @@ def test_div_positives():
     
  
 def test_div_negative():
-    assert div_num(2, -3) ==  -6
+    assert div_num(2, -4) ==  -2
 
 
 def test_div_zero():
