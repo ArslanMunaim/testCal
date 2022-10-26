@@ -26,8 +26,30 @@ def div_num(a,b):
 
 if __name__ == '__main__':
     print('Hello! GITHUB Calculator')
+    
+    operation = input('''
+    Please type in the math operation you would like to complete:
+    + for addition
+    - for subtraction
+    * for multiplication
+    / for division
+    Enter here : 
+    ''')
 
+    a = int(input('Enter your first number: '))
+    b = int(input('Enter your second number: '))
+    
+    if operation == '+':
+        print('Result : ' +str(add_num(a,b)))
+       
+    elif operation == '-':
+        print('Result : ' +str(sub_num(a,b)))
 
+    elif operation == '*':
+        print('Result : ' +str(mul_num(a,b)))
+
+    elif operation == '/':
+        print('Result : ' +str(div_num(a,b)))
 
         
 
